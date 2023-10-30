@@ -6,9 +6,15 @@ import 'package:tastequest/widgets_common/custom_textfield.dart';
 import '../../widgets_common/applogo_widget.dart';
 import '../../widgets_common/our_button.dart';
 
-class SignupScreen extends StatelessWidget {
+class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
 
+  @override
+  State<SignupScreen> createState() => _SignupScreenState();
+}
+
+class _SignupScreenState extends State<SignupScreen> {
+  bool? isCheck = false;
   @override
   Widget build(BuildContext context) {
     return bgWidget(
@@ -38,9 +44,13 @@ class SignupScreen extends StatelessWidget {
                 Row(
                   children: [
                     Checkbox(
-                        value: false,
+                        value: isCheck,
                         checkColor: redColor,
-                        onChanged: (newValue) {}),
+                        onChanged: (newValue) {
+                          setState(() {
+                            isCheck = newValue;
+                          });
+                        }),
                     5.heightBox,
                     RichText(
                         text: const TextSpan(children: [
@@ -61,7 +71,7 @@ class SignupScreen extends StatelessWidget {
                 ),
                 5.heightBox,
                 ourButton(
-                        color: redColor,
+                        color: isCheck == true ? redColor : lightGrey,
                         title: signup,
                         textColor: whiteColor,
                         onPress: () {})
