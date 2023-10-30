@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 import 'package:tastequest/consts/consts.dart';
 import 'package:tastequest/consts/lists.dart';
 import 'package:tastequest/views/auth_screen/signup_screen.dart';
-import 'package:tastequest/views/home_screen/home_screen.dart';
+import 'package:tastequest/views/home_screen/home.dart';
 import 'package:tastequest/widgets_common/applogo_widget.dart';
 import 'package:tastequest/widgets_common/bg_widget.dart';
 import 'package:tastequest/widgets_common/custom_textfield.dart';
@@ -41,7 +41,7 @@ class LoginScreen extends StatelessWidget {
                     title: login,
                     textColor: whiteColor,
                     onPress: () {
-                      Get.to(() => HomeScreen());
+                      Get.to(() => Home());
                     }).box.width(context.screenWidth - 50).make(),
                 5.heightBox,
                 createNewAccount.text.color(fontGrey).make(),

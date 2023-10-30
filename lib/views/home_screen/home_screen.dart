@@ -1,75 +1,34 @@
-import 'package:get/get.dart';
 import 'package:tastequest/consts/consts.dart';
-import 'package:tastequest/controllers/home_controller.dart';
 
-class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
-
-  var controller = Get.put(HomeController());
-
-  var navbarIterm = [
-    BottomNavigationBarItem(
-        icon: Image.asset(
-          icHome,
-          width: 26,
-        ),
-        label: home),
-    BottomNavigationBarItem(
-        icon: Image.asset(
-          icCategories,
-          width: 26,
-        ),
-        label: catogaries),
-    BottomNavigationBarItem(
-        icon: Image.asset(
-          icCart,
-          width: 26,
-        ),
-        label: cart),
-    BottomNavigationBarItem(
-        icon: Image.asset(
-          icProfile,
-          width: 26,
-        ),
-        label: account),
-  ];
-  var navBody = [
-    Container(
-      color: Colors.blue,
-    ),
-    Container(
-      color: Colors.amber,
-    ),
-    Container(
-      color: Colors.purple,
-    ),
-    Container(
-      color: Colors.cyan,
-    ),
-  ];
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
+    return Container(
+      padding: const EdgeInsets.all(12),
+      color: lightGrey,
+      width: context.screenWidth,
+      height: context.screenHeight,
+      child: SafeArea(child: Column(
         children: [
-          Obx(() => Expanded(
-              child: navBody.elementAt(controller.currentNavIndex.value))),
+          Container(
+            color: lightGrey,
+            child: TextFormField(
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: whiteColor,
+                hintText: 
+              ),
+            ),
+          )
         ],
-      ),
-      bottomNavigationBar: Obx(
-        () => BottomNavigationBar(
-          currentIndex: controller.currentNavIndex.value,
-          selectedItemColor: redColor,
-          selectedLabelStyle: TextStyle(fontFamily: semibold),
-          type: BottomNavigationBarType.fixed,
-          backgroundColor: whiteColor,
-          items: navbarIterm,
-          onTap: (value) {
-            controller.currentNavIndex.value = value;
-          },
-        ),
-      ),
+      )),
     );
   }
 }
