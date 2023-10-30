@@ -15,3 +15,10 @@ const createNewAccount = "or, create a new account";
 const loginWith = "Log in with";
 const termAndCond = "Terms and Conditions";
 const alreadyHaveAccount = "Already have an accoount?";
+
+//home strings
+
+const home = "Home",
+    catogaries = "Catogaries",
+    cart = "Cart",
+    account = "Account";
