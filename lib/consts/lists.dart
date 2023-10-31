@@ -12,3 +12,27 @@ const featuredImages2 = [imgS4, imgS5, imgS6];
 
 const featuredTitles1 = [indian, chinese, italian];
 const featuredTitles2 = [american, spanish, romanian];
+
+const catogariesList = [
+  drinks,
+  hotdrinks,
+  breakfasts,
+  lunch,
+  dinner,
+  veg,
+  nonveg,
+  desserts,
+  shakes,
+];
+
+const catogariesImages = [
+  imgFc1,
+  imgFc2,
+  imgFc3,
+  imgFc4,
+  imgFc5,
+  imgFc6,
+  imgFc7,
+  imgFc8,
+  imgFc9
+];

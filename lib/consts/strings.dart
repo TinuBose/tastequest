@@ -39,3 +39,15 @@ const searchanything = "Search anything...",
     spanish = "Spanish",
     romanian = "Romanian",
     featuredProduct = "Featured Food";
+
+//catogaries strings
+
+const drinks = "cool Drinks";
+const hotdrinks = "Hot Drinks";
+const breakfasts = "Brakfasts";
+const lunch = "Lunch";
+const dinner = "Dinner";
+const veg = "Vegetarian";
+const nonveg = "Non Vegetarian";
+const desserts = "Desserts";
+const shakes = "Shakes";
