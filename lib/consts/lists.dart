@@ -38,3 +38,6 @@ const catogariesImages = [
 ];
 
 const itemDetailButtonsList = [review, policy, ingredients];
+
+const profileButtonsList = [orders, whishlist];
+const profileButtonsIcon = [icOrder, icOrder];

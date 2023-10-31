@@ -11,6 +11,7 @@ const passwordHint = "******";
 const forgetPass = "Forget PAssword";
 const login = "Log in";
 const signup = "Sign up";
+const logout = "Log out";
 const createNewAccount = "or, create a new account";
 const loginWith = "Log in with";
 const termAndCond = "Terms and Conditions";
@@ -56,3 +57,7 @@ const review = "Review",
     policy = "Support policy",
     ingredients = "Ingredients",
     productsyoumaylike = "Products you may also like";
+
+//profile strings
+
+const whishlist = "my whishlist", orders = "my orders";
