@@ -195,6 +195,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   ),
+                  20.heightBox,
                   VxSwiper.builder(
                       aspectRatio: 16 / 9,
                       height: 150,

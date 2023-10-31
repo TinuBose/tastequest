@@ -36,3 +36,5 @@ const catogariesImages = [
   imgFc8,
   imgFc9
 ];
+
+const itemDetailButtonsList = [review, policy, ingredients];

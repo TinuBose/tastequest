@@ -51,3 +51,8 @@ const veg = "Vegetarian";
 const nonveg = "Non Vegetarian";
 const desserts = "Desserts";
 const shakes = "Shakes";
+
+const review = "Review",
+    policy = "Support policy",
+    ingredients = "Ingredients",
+    productsyoumaylike = "Products you may also like";
