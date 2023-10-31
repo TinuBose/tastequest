@@ -27,4 +27,8 @@ const home = "Home",
 
 const searchanything = "Search anything...",
     todayDeal = "Today's Deal",
-    flashSale = "Flash Sale";
+    flashSale = "Flash Sale",
+    topSellers = "Top Sellers",
+    brand = "Brand",
+    topCatogaries = "Top catogaries",
+    featuredCatogaries = "Featured Catogaries";
